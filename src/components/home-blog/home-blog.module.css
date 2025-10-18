@@ -1,0 +1,32 @@
+.home-blog-container {
+  padding: var(--standard-spacing) 0;
+  display: grid;
+  gap: var(--standard-spacing);
+}
+
+.home-blog-heading {
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+}
+
+.subheading {
+  font-size: var(--standard-text-font-size);
+  display: block;
+  margin-top: 0.7rem;
+}
+
+.home-posts-container {
+  display: flex;
+  gap: 1rem;
+
+  @media (min-width: 500px) {
+    gap: 2rem;
+  }
+
+  @media (min-width: 1000px) {
+    gap: 3rem;
+  }
+}

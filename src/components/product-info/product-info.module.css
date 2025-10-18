@@ -1,0 +1,134 @@
+.item-description {
+  flex: 1 1 55%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+
+  &.smaller-screen {
+    margin: min(4rem, 10vmin) 0 min(6rem, 10vmin);
+  }
+
+  .item-title {
+    font-family: var(--serif-font);
+    font-size: var(--title-responsive-font-size);
+    text-align: center;
+    margin: 0;
+
+    & .item-brand {
+      font-size: var(--standard-text-font-size);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.item-rating {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.full-stars {
+  color: #333!important;
+}
+
+.empty-stars {
+  opacity: 0.55!important;
+}
+
+.price-and-volume {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-volume {
+  font-weight: bold;
+  color: black;
+  padding: .5rem 2rem;
+  border-radius: 5rem;
+  border: 1px solid black;
+  border-top: 0;
+  border-bottom: 0;
+  margin: 1rem 0 0;
+}
+
+.item-price {
+  font-size: var(--title-responsive-font-size);
+  font-family: var(--serif-font);
+  font-weight: 700;
+}
+
+.item-volume, .item-desc-section, .item-desc-text, .item-property, .review {
+  font-size: var(--standard-text-font-size);
+  line-height: 200%;
+}
+
+.item-property {
+  font-size: var(--small-text-font-size);
+}
+
+.item-subtitle {
+  font-weight: bold;
+  font-family: var(--serif-font);
+}
+
+.item-desc-section {
+  width: 100%;
+  font-size: 1.7rem;
+}
+
+.item-grouped-buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1rem;
+  column-gap: 2rem;
+
+  & > * {
+    flex: 1 0 15rem;
+  }
+}
+
+.item-suited-to {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.item-properties {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+
+.item-property {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--serif-font);
+  flex: 1 0 auto;
+}
+
+.item-property-check {
+  background: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 13rem;
+  padding: 1rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .9rem;
+}
